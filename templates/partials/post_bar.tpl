@@ -16,12 +16,14 @@
 		<span>[[global:views]]</span>
 		<strong><span class="human-readable-number" title="{viewcount}">{viewcount}</span></strong>
 	</small>
+<!--
 	<span class="browsing-users hidden">
 		&bull;
 		<small><span>[[category:browsing]]</span></small>
 		<div class="thread_active_users active-users inline-block"></div>
 		<small class="hidden"><i class="fa fa-users"></i> <span class="user-count"></span></small>
 	</span>
+-->
 </div>
 
 <div class="topic-main-buttons pull-right inline-block">

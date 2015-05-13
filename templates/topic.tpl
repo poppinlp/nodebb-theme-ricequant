@@ -69,8 +69,11 @@
 							<button class="btn btn-sm btn-default follow" type="button" title="[[topic:notify_me]]"><!-- IF isFollowing --><i class="fa fa-eye-slash"><!-- ELSE --><i class="fa fa-eye"><!-- ENDIF isFollowing --></i></button>
 							<!-- ENDIF !posts.index -->
 							<!-- IF !posts.selfPost -->
+<!--
 							<button class="btn btn-sm btn-default flag" type="button" title="[[topic:flag_title]]"><i class="fa fa-flag-o"></i></button>
+-->
 							<!-- ENDIF !posts.selfPost -->
+<!--
 							<button data-favourited="{posts.favourited}" class="favourite favourite-tooltip btn btn-sm btn-default <!-- IF posts.favourited --> btn-warning <!-- ENDIF posts.favourited -->" type="button">
 								<span class="favourite-text">[[topic:favourite]]</span>
 								<span class="favouriteCount" data-favourites="{posts.reputation}">{posts.reputation}</span>&nbsp;
@@ -80,6 +83,7 @@
 								<i class="fa fa-star-o"></i>
 								<!-- ENDIF posts.favourited -->
 							</button>
+-->
 						</div>
 
 						<!-- IF !reputation:disabled -->
@@ -104,12 +108,14 @@
 						<!-- ENDIF privileges.topics:reply -->
 
 						<div class="pull-right">
+<!--
 							<div class="btn-group post-tools">
 								<div class="dropdown share-dropdown pull-right">
 									<button title="[[topic:share]]"class="btn btn-sm btn-default share" data-toggle="dropdown" href="#"><i class="fa fa-share-square-o"></i></button>
 									<!-- IMPORT partials/share_dropdown.tpl -->
 								</div>
 							</div>
+-->
 
 							<!-- IF posts.display_moderator_tools -->
 							<div class="btn-group post-tools">

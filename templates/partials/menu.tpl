@@ -23,6 +23,7 @@
 			<div class="navbar-collapse collapse navbar-ex1-collapse">
 				<!-- IF !maintenanceHeader -->
 				<ul id="main-nav" class="nav navbar-nav pull-left">
+<!--
 					<!-- IF loggedIn -->
 					<li>
 						<a href="{relative_path}/unread" title="[[global:header.unread]]">
@@ -30,7 +31,6 @@
 						</a>
 					</li>
 					<!-- ENDIF loggedIn -->
-
 					<li>
 						<a href="{relative_path}/recent" title="[[global:header.recent]]">
 							<i class="fa fa-fw fa-clock-o"></i><span class="visible-xs-inline"> [[global:header.recent]]</span>
@@ -58,6 +58,7 @@
 							<i class="fa fa-fw fa-group"></i><span class="visible-xs-inline"> [[global:header.groups]]</span>
 						</a>
 					</li>
+-->
 					<!-- IF isAdmin -->
 					<li>
 						<a href="{relative_path}/admin" title="[[global:header.admin]]" target="_top">
@@ -129,6 +130,7 @@
 									<i class="fa fa-fw fa-circle status {user.status}"></i> <span id="user-header-name">{user.username}</span>
 								</a>
 							</li>
+<!--
 							<li role="presentation" class="divider"></li>
 							<li>
 								<a href="#" class="user-status" data-status="online">
@@ -150,6 +152,7 @@
 									<i class="fa fa-fw fa-circle status offline"></i><span> [[global:invisible]]</span>
 								</a>
 							</li>
+-->
 							<li role="presentation" class="divider"></li>
 							<li id="logout-link">
 								<a href="#"><i class="fa fa-fw fa-sign-out"></i><span> [[global:logout]]</span></a>
