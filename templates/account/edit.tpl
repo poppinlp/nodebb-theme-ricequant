@@ -70,13 +70,6 @@
 						</div>
 					</div>
 
-					<div class="control-group">
-						<label class="control-label" for="inputAboutMe">[[user:aboutme]]</label> <small><label id="aboutMeCharCountLeft"></label></small>
-						<div class="controls">
-							<textarea class="form-control" id="inputAboutMe" rows="5">{aboutme}</textarea>
-						</div>
-					</div>
-
 					<!-- IF !disableSignatures -->
 					<div class="control-group">
 						<label class="control-label" for="inputSignature">[[user:signature]]</label> <small><label id="signatureCharCountLeft"></label></small>
@@ -105,7 +98,7 @@
 					<div class="control-group">
 						<label class="control-label" for="inputCurrentPassword">[[user:current_password]]</label>
 						<div class="controls">
-							<input autocomplete="off" class="form-control" type="password" id="inputCurrentPassword" placeholder="[[user:current_password]]" value=""<!-- IF !hasPassword --> disabled<!-- ENDIF !hasPassword-->>
+							<input class="form-control" type="password" id="inputCurrentPassword" placeholder="[[user:current_password]]" value=""<!-- IF !hasPassword --> disabled<!-- ENDIF !hasPassword-->>
 						</div>
 					</div>
 					<!-- ENDIF isSelf -->
@@ -131,7 +124,7 @@
 					</div>
 					<br/>
 					<div class="form-actions">
-						<a id="changePasswordBtn" href="#" class="btn btn-primary"><i class="hide fa fa-spinner fa-spin"></i> [[user:change_password]]</a>
+						<a id="changePasswordBtn" href="#" class="btn btn-primary">[[user:change_password]]</a>
 					</div>
 
 				</form>
@@ -143,5 +136,8 @@
 	<!-- IMPORT partials/modals/upload_picture_from_url_modal.tpl -->
 </div>
 
-<!-- IMPORT partials/variables/account.tpl -->
-<!-- IMPORT partials/variables/account/edit.tpl -->
+<input type="hidden" template-variable="yourid" value="{yourid}" />
+<input type="hidden" template-variable="theirid" value="{theirid}" />
+<input type="hidden" template-variable="userslug" value="{userslug}" />
+<input type="hidden" template-variable="gravatarpicture" value="{gravatarpicture}" />
+<input type="hidden" template-variable="uploadedpicture" value="{uploadedpicture}" />

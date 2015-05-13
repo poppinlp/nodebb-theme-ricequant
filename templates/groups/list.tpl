@@ -7,9 +7,9 @@
 	<div class="col-lg-8">
 		<div class="col-xs-3 text-left pull-right">
 			<select class="form-control" id="search-sort">
-				<option value="alpha">[[groups:details.group_name]]</option>
-				<option value="count">[[groups:details.member_count]]</option>
-				<option value="date">[[groups:details.creation_date]]</option>
+				<option value="alpha">Group Name</option>
+				<option value="count">Member Count</option>
+				<option value="date">Creation Date</option>
 			</select>
 		</div>
 		<div class="col-xs-5 text-left pull-right">
@@ -21,9 +21,7 @@
 	</div>
 </div>
 
-<hr />
-
-<div component="groups/container" class="row" id="groups-list">
+<div class="groups list row" id="groups-list">
 	<!-- IF groups.length -->
 	<!-- IMPORT partials/groups/list.tpl -->
 	<!-- ELSE -->

@@ -9,10 +9,8 @@
 		<div class="col-md-12 user-topics" data-nextstart="{nextStart}">
 			<!-- IMPORT partials/topics_list.tpl -->
 		</div>
-		<!-- IF config.usePagination -->
-			<!-- IMPORT partials/paginator.tpl -->
-		<!-- ENDIF config.usePagination -->
 	</div>
 </div>
 
-<!-- IMPORT partials/variables/account.tpl -->
+<input type="hidden" template-variable="yourid" value="{yourid}" />
+<input type="hidden" template-variable="theirid" value="{theirid}" />

@@ -1,6 +1,7 @@
 {
     "id": "nodebb-theme-ricequant",
-    "name": "NodeBB Ricequant",
+    "name": "Ricequant Theme for NodeBB",
     "description": "Ricequant Theme for NodeBB",
-    "url": "https://github.com/poppinlp/nodebb-theme-ricequant"
+    "url": "https://github.com/poppinlp/nodebb-theme-ricequant.git",
+    "screenshot": "screenshot.png"
 }

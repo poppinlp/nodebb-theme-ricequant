@@ -17,7 +17,7 @@
 				<span class="user-typing pull-right hide"><i class="fa fa-pencil"></i> [[modules:chat.user_typing, {meta.username}]]</span>
 			</ul>
 			<div class="input-group">
-				<textarea component="chat/input" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input" rows="1"></textarea>
+				<textarea placeholder="[[modules:chat.placeholder]]" class="form-control chat-input"></textarea>
 				<span class="input-group-btn">
 					<button class="btn btn-primary" type="button" data-action="send">Send</button>
 				</span>
@@ -30,7 +30,7 @@
 	</div>
 	<!-- ENDIF meta -->
 </div>
-<div class="col-sm-3">
+<div class="col-sm-3 hidden-xs">
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h2 class="panel-title">[[modules:chat.contacts]]</h2>
@@ -39,7 +39,7 @@
 			<ul class="chats-list">
 				<!-- BEGIN contacts -->
 				<li data-username="{contacts.username}" data-uid="{contacts.uid}">
-					<i component="user/status" title="[[global:{contacts.status}]]" class="fa fa-circle status {contacts.status}"></i>
+					<i class="fa fa-circle status {contacts.status}"></i>
 					<img class="user-img" src="{contacts.picture}">
 					<span>{contacts.username}</span>
 				</li>
@@ -55,7 +55,7 @@
 			<ul class="chats-list recent-chats" data-nextstart="{nextStart}">
 				<!-- BEGIN chats -->
 				<li data-username="{chats.username}" data-uid="{chats.uid}" class="<!-- IF chats.unread -->unread<!-- ENDIF chats.unread -->">
-					<i component="user/status" title="[[global:{chats.status}]]" class="fa fa-circle status {chats.status}"></i>
+					<i class="fa fa-circle status {chats.status}"></i>
 					<img class="user-img" src="{chats.picture}">
 					<span>{chats.username}</span>
 				</li>

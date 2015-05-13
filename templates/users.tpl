@@ -1,12 +1,10 @@
 <div class="users">
 	<ul class="nav nav-pills">
-		<li class=''><a href='{config.relative_path}/users/online'>[[global:online]]</a></li>
-		<li class=''><a href='{config.relative_path}/users/latest'>[[users:latest_users]]</a></li>
-		<li class=''><a href='{config.relative_path}/users/sort-posts'>[[users:top_posters]]</a></li>
-		<li class=''><a href='{config.relative_path}/users/sort-reputation'>[[users:most_reputation]]</a></li>
-		<!-- IF loggedIn -->
-		<li class=''><a href='{config.relative_path}/users/search'>[[users:search]]</a></li>
-		<!-- ENDIF loggedIn -->
+		<li class=''><a href='{relative_path}/users/online'>[[global:online]]</a></li>
+		<li class=''><a href='{relative_path}/users/latest'>[[users:latest_users]]</a></li>
+		<li class=''><a href='{relative_path}/users/sort-posts'>[[users:top_posters]]</a></li>
+		<li class=''><a href='{relative_path}/users/sort-reputation'>[[users:most_reputation]]</a></li>
+		<li class=''><a href='{relative_path}/users/search'>[[users:search]]</a></li>
 	</ul>
 
 	<br />
@@ -22,7 +20,6 @@
 
 	<ul id="users-container" class="users-container">
 		<!-- IMPORT partials/users_list.tpl -->
-		<!-- IF anonymousUserCount -->
 		<li class="users-box {show_anon} anon-user">
 			<img src="https://secure.gravatar.com/avatar/" class="img-thumbnail"/>
 			<br/>
@@ -31,7 +28,6 @@
 				<span>[[global:guests]]</span>
 			</div>
 		</li>
-		<!-- ENDIF anonymousUserCount -->
 	</ul>
 
 	<div class="text-center {loadmore_display}">

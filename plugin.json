@@ -3,10 +3,7 @@
 	"library": "./lib/theme.js",
 	"hooks": [
 		{
-			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
+			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas", "callbacked": true
 		}
-	],
-	"scripts": [
-		"lib/ricequant.js"
 	]
 }

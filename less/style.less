@@ -79,9 +79,9 @@ a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus {
 	transition: opacity 100ms linear;
 
 	&.ajaxifying {
-		-moz-opacity: 0.15;
-		opacity: 0.15;
-		-ms-filter:~"progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+		-moz-opacity: 0.00;
+		opacity: 0.00;
+		-ms-filter:~"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	}
 }
 
@@ -195,10 +195,6 @@ a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus {
 	}
 }
 
-.bootbox {
-	z-index: 100001;
-}
-
 @media (max-width: 760px) {
 	.chat-modal {
 		width: 100%;
@@ -217,15 +213,18 @@ a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus {
 	}
 }
 
-.disabled a {
-	pointer-events: none;
-}
-
 //START: FIXES FOR BS3, may need to remove these when we get out of the RC releases
 @media (max-width: 979px) {
 	.hidden-mobile {
 		// BS2/3's hidden-xs does not support inline-block, so here it is for now.
 		display: none !important;
+	}
+}
+
+@media (min-width: 760px) {
+	.container > .navbar-header, .container > .navbar-collapse {
+		padding-right: 0;
+		margin-right: -11px;
 	}
 }
 

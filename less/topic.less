@@ -57,7 +57,7 @@
 		opacity: 0.30;
 	}
 
-	.posts {
+	> ul {
 		list-style-type: none;
 		padding: 0;
 
@@ -65,10 +65,8 @@
 			padding-bottom: 10px;
 
 			&.deleted {
-				.post-content {
-					-moz-opacity: 0.30;
-					opacity: 0.30;
-				}
+				-moz-opacity: 0.30;
+				opacity: 0.30;
 			}
 		}
 	}
@@ -275,6 +273,16 @@
 					display: inline-block!important;
 				}
 			}
+		}
+	}
+
+	.posts {
+		.post-bar {
+			display:none!important;
+		}
+
+		.post-bar[data-index="0"] {
+			display:block!important;
 		}
 	}
 

@@ -8,11 +8,33 @@
 	<!-- ENDIF !posts.length -->
 
 	<div class="row">
-		<!-- IMPORT partials/posts_list.tpl -->
-		<!-- IF config.usePagination -->
-			<!-- IMPORT partials/paginator.tpl -->
-		<!-- ENDIF config.usePagination -->
+		<div class="col-md-12 user-favourite-posts" data-nextstart="{nextStart}">
+			<!-- BEGIN posts -->
+			<div class="topic-row panel panel-default clearfix">
+				<div class="panel-body">
+					<a href="{relative_path}/user/{posts.user.userslug}">
+						<img title="{posts.user.username}" class="img-rounded user-img" src="{posts.user.picture}">
+					</a>
+
+					<a href="{relative_path}/user/{posts.user.userslug}">
+						<strong><span>{posts.user.username}</span></strong>
+					</a>
+					<div class="content">
+						<p>{posts.content}</p>
+						<p class="fade-out"></p>
+					</div>
+					<small>
+						<span class="pull-right footer">
+							[[global:posted_in_ago, <a href="{relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]] &bull;
+							<a href="{relative_path}/topic/{posts.topic.slug}/{posts.index}">[[global:read_more]]</a>
+						</span>
+					</small>
+				</div>
+			</div>
+			<!-- END posts -->
+		</div>
 	</div>
 </div>
 
-<!-- IMPORT partials/variables/account.tpl -->
+<input type="hidden" template-variable="yourid" value="{yourid}" />
+<input type="hidden" template-variable="theirid" value="{theirid}" />

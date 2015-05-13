@@ -6,37 +6,26 @@
 <input type="hidden" template-variable="currentPage" value="{currentPage}" />
 <input type="hidden" template-variable="pageCount" value="{pageCount}" />
 
+<!-- IMPORT partials/breadcrumbs.tpl -->
+
+<div class="subcategories row">
+	<!-- BEGIN children -->
+	<!-- IMPORT partials/category_child.tpl -->
+	<!-- END children -->
+</div>
 
 <div class="category row">
-	<div class="col-md-9" no-widget-class="col-lg-12 col-sm-12" no-widget-target="sidebar">
-
-		<!-- IMPORT partials/breadcrumbs.tpl -->
-
-		<div class="subcategories row">
-			<!-- BEGIN children -->
-			<!-- IMPORT partials/category_child.tpl -->
-			<!-- END children -->
-		</div>
+	<div class="{topic_row_size}" no-widget-class="col-lg-12 col-sm-12" no-widget-target="sidebar">
 
 		<div class="header category-tools clearfix">
 			<!-- IF privileges.topics:create -->
-			<button id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
-			<!-- ELSE -->
-				<!-- IF !loggedIn -->
-				<a href="/login?next=category/{slug}" class="btn btn-primary">[[category:guest-login-post]]</a>
-				<!-- ENDIF !loggedIn -->
+			<button id="new_post" class="btn btn-primary">[[category:new_topic_button]]</button>
 			<!-- ENDIF privileges.topics:create -->
 
 			<span class="pull-right">
 				<!-- IF loggedIn -->
-				<button type="button" class="btn btn-default btn-success watch <!-- IF !isIgnored -->hidden<!-- ENDIF !isIgnored -->">
-					<i class="fa fa-eye"></i>
-					<span class="visible-sm-inline visible-md-inline visible-lg-inline">[[category:watch]]</span>
-				</button>
-				<button type="button" class="btn btn-default btn-warning ignore <!-- IF isIgnored -->hidden<!-- ENDIF isIgnored -->">
-					<i class="fa fa-eye-slash"></i>
-					<span class="visible-sm-inline visible-md-inline visible-lg-inline">[[category:ignore]]</span>
-				</button>
+				<button type="button" class="btn btn-default btn-success watch <!-- IF !isIgnored -->hidden<!-- ENDIF !isIgnored -->"><i class="fa fa-eye"></i> [[topic:watch]]</button>
+				<button type="button" class="btn btn-default btn-warning ignore <!-- IF isIgnored -->hidden<!-- ENDIF isIgnored -->"><i class="fa fa-eye-slash"></i> [[category:ignore]]</button>
 				<!-- ENDIF loggedIn -->
 
 				<!-- IMPORT partials/category_tools.tpl -->
@@ -45,9 +34,7 @@
 
 				<div class="dropdown share-dropdown inline-block">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-						<span class="visible-sm-inline visible-md-inline visible-lg-inline">[[topic:share]]</span>
-						<span class="visible-xs-inline"><i class="fa fa-fw fa-share-alt"></i></span>
-						<span class="caret"></span>
+						[[topic:share]] <span class="caret"></span>
 					</button>
 
 					<!-- IMPORT partials/share_dropdown.tpl -->
@@ -62,24 +49,24 @@
 		</div>
 		<!-- ENDIF !topics.length -->
 
-		<ul component="category" id="topics-container" itemscope itemtype="http://www.schema.org/ItemList" data-nextstart="{nextStart}">
+		<ul id="topics-container" itemscope itemtype="http://www.schema.org/ItemList" data-nextstart="{nextStart}">
 			<meta itemprop="itemListOrder" content="descending">
 			<!-- BEGIN topics -->
-			<li component="category/topic" class="category-item {function.generateTopicClass}" data-tid="{topics.tid}" data-index="{topics.index}" data-cid="{topics.cid}" itemprop="itemListElement">
+			<li class="category-item<!-- IF topics.locked --> locked<!-- ENDIF topics.locked --><!-- IF topics.pinned --> pinned<!-- ENDIF topics.pinned --><!-- IF topics.deleted --> deleted<!-- ENDIF topics.deleted --><!-- IF topics.unread --> unread<!-- ENDIF topics.unread -->" itemprop="itemListElement" data-tid="{topics.tid}" data-index="{topics.index}">
 
 				<div class="col-md-12 col-xs-12 panel panel-default topic-row">
 					<!-- IF privileges.editable -->
 						<i class="fa fa-fw fa-square-o pull-left select pointer"></i>
 					<!-- ENDIF privileges.editable -->
-					<a href="{config.relative_path}/user/{topics.user.userslug}" class="pull-left">
+					<a href="{relative_path}/user/{topics.user.userslug}" class="pull-left">
 						<img src="<!-- IF topics.thumb -->{topics.thumb}<!-- ELSE -->{topics.user.picture}<!-- ENDIF topics.thumb -->" class="img-rounded user-img" title="{topics.user.username}"/>
 					</a>
 
-					<h3 component="topic/header">
-						<a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">
-							<meta itemprop="name" content="{function.stripTags, title}">
+					<h3>
+						<a href="{relative_path}/topic/{topics.slug}" itemprop="url">
+							<meta itemprop="name" content="{topics.title}">
 
-							<strong><i component="topic/pinned" class="fa fa-thumb-tack<!-- IF !topics.pinned --> hide<!-- ENDIF !topics.pinned -->"></i> <i component="topic/locked" class="fa fa-lock<!-- IF !topics.locked --> hide<!-- ENDIF !topics.locked -->"></i></strong>
+							<strong><i class="fa fa-thumb-tack<!-- IF !topics.pinned --> hide<!-- ENDIF !topics.pinned -->"></i> <i class="fa fa-lock<!-- IF !topics.locked --> hide<!-- ENDIF !topics.locked -->"></i></strong>
 							<span class="topic-title">{topics.title}</span>
 						</a>
 					</h3>
@@ -103,10 +90,10 @@
 							<!-- IF topics.unreplied -->
 							[[category:no_replies]]
 							<!-- ELSE -->
-							<a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
+							<a href="<!-- IF topics.teaser.user.userslug -->{relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
 								<img class="teaser-pic" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"/>
 							</a>
-							<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
+							<a href="{relative_path}/topic/{topics.slug}/{topics.teaser.index}">
 								[[global:replied_ago, <span class="timeago" title="{topics.teaser.timestamp}"></span>]]
 							</a>
 							<!-- ENDIF topics.unreplied -->

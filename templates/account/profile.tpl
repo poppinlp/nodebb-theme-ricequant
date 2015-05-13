@@ -14,7 +14,7 @@
 					<div>
 						<div class="text-center">
 							<span>
-								<i component="user/status" class="fa fa-circle status {status}" title="[[global:{status}]]"></i>
+								<i class="account-online-status fa fa-circle status {status}" title="[[global:{status}]]"></i>
 								<span class="account-username"> {username}</span>
 							</span>
 
@@ -33,12 +33,6 @@
 							<span class="label label-danger">[[user:banned]]</span>
 						</div>
 						<!-- ENDIF banned -->
-						<!-- IF aboutme -->
-						<hr/>
-						<div component="aboutme" class="text-center">
-						{aboutme}
-						</div>
-						<!-- ENDIF aboutme -->
 						<hr/>
 						<div class="text-center account-stats">
 
@@ -122,7 +116,7 @@
 				</div>
 				<div class="panel-body">
 				<!-- BEGIN groups -->
-					<a href="{config.relative_path}/groups/{groups.slug}"><span class="label group-label inline-block" style="background-color: {groups.labelColor};"><!-- IF groups.icon --><i class="fa {groups.icon}"></i> <!-- ENDIF groups.icon -->{groups.userTitle}</span></a>
+					<a href="{relative_path}/groups/{groups.slug}"><span class="label group-label inline-block" style="background-color: {groups.labelColor};"><!-- IF groups.icon --><i class="fa {groups.icon}"></i> <!-- ENDIF groups.icon -->{groups.userTitle}</span></a>
 				<!-- END groups -->
 				</div>
 			</div>
@@ -144,11 +138,36 @@
 		</div>
 
 
-		<div class="col-md-7">
-			<!-- IF !posts.length -->
-			<span>[[user:has_no_posts]]</span>
-			<!-- ENDIF !posts.length -->
-			<!-- IMPORT partials/posts_list.tpl -->
+		<div class="col-md-7 user-recent-posts" data-nextstart="{nextStart}">
+			<div class="topic-row panel panel-default clearfix">
+				<div class="panel-heading">
+					<h3 class="panel-title">[[global:recentposts]]</h3>
+				</div>
+				<div class="panel-body">
+					<!-- IF !posts.length -->
+					<span>[[user:has_no_posts]]</span>
+					<!-- ENDIF !posts.length -->
+					<!-- BEGIN posts -->
+					<div class="user-post clearfix" data-pid="{posts.pid}">
+						<div class="content">
+							<p>{posts.content}</p>
+							<p class="fade-out"></p>
+						</div>
+						<small>
+							<span class="pull-right footer">
+								[[global:posted_in_ago, <a href="{relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]] &bull;
+								<a href="{relative_path}/topic/{posts.topic.slug}/{posts.index}">[[global:read_more]]</a>
+							</span>
+						</small>
+					</div>
+					<hr/>
+					<!-- END posts -->
+					<div class="loading-indicator text-center hidden">
+						<i class="fa fa-refresh fa-spin"></i>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
@@ -157,5 +176,6 @@
 
 </div>
 
-<!-- IMPORT partials/variables/account.tpl -->
-<!-- IMPORT partials/variables/account/profile.tpl -->
+<input type="hidden" template-variable="yourid" value="{yourid}" />
+<input type="hidden" template-variable="theirid" value="{theirid}" />
+<input type="hidden" template-type="boolean" template-variable="isFollowing" value="{isFollowing}" />
