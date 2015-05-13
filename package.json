@@ -1,0 +1,25 @@
+{
+  "name": "nodebb-theme-ricequant",
+  "version": "0.0.1",
+  "description": "NodeBB theme for ricequant.",
+  "main": "theme.less",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poppinlp/nodebb-theme-ricequant.git"
+  },
+  "author": "PoppinL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poppinlp/nodebb-theme-ricequant/issues"
+  },
+  "keywords": [
+    "nodebb",
+    "theme",
+    "themes",
+    "ricequant"
+  ],
+  "homepage": "https://github.com/poppinlp/nodebb-theme-ricequant"
+}

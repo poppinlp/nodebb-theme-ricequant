@@ -1,2 +1,3 @@
 # nodebb-theme-ricequant
-NodeBB theme for ricequant.
+
+Ricequant theme for NodeBB.

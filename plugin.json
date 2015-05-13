@@ -1,0 +1,12 @@
+{
+	"id": "nodebb-theme-ricequant",
+	"library": "./lib/theme.js",
+	"hooks": [
+		{
+			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
+		}
+	],
+	"scripts": [
+		"lib/ricequant.js"
+	]
+}
