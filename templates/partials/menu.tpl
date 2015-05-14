@@ -12,7 +12,7 @@
 <!--
 					<a href="{relative_path}/">
 -->
-					<a href="/">
+					<a href="//www.ricequant.com">
 						<h1 class="navbar-brand forum-title">{title}</h1>
 					</a>
 					<!-- ENDIF showSiteTitle -->

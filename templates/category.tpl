@@ -59,6 +59,17 @@
 			<li class="category-item<!-- IF topics.locked --> locked<!-- ENDIF topics.locked --><!-- IF topics.pinned --> pinned<!-- ENDIF topics.pinned --><!-- IF topics.deleted --> deleted<!-- ENDIF topics.deleted --><!-- IF topics.unread --> unread<!-- ENDIF topics.unread -->" itemprop="itemListElement" data-tid="{topics.tid}" data-index="{topics.index}">
 
 				<div class="col-md-12 col-xs-12 panel panel-default topic-row">
+                    <div class="pull-right" style="line-height:24px;height:24px;">
+						<span class="topic-stats">
+							[[global:posts]]
+							<strong class="human-readable-number" title="{topics.postcount}">{topics.postcount}</strong>
+						</span>
+						|
+						<span class="topic-stats">
+							[[global:views]]
+							<strong class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</strong>
+						</span>
+                    </div>
 					<!-- IF privileges.editable -->
 						<i class="fa fa-fw fa-square-o pull-left select pointer"></i>
 					<!-- ENDIF privileges.editable -->
@@ -76,16 +87,6 @@
 					</h3>
 
 					<small>
-						<span class="topic-stats">
-							[[global:posts]]
-							<strong class="human-readable-number" title="{topics.postcount}">{topics.postcount}</strong>
-						</span>
-						|
-						<span class="topic-stats">
-							[[global:views]]
-							<strong class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</strong>
-						</span>
-						|
 						<span>
 							[[global:posted_ago, <span class="timeago" title="{topics.relativeTime}"></span>]]
 						</span>
