@@ -36,7 +36,7 @@
 			</form>
 		</div>
 		<!--  ENDIF allowTopicsThumbnail -->
-
+<!--
 		<div class="row category-tag-row">
 			<!-- IF isTopic -->
 			<div class="col-sm-3 category-list-container">
@@ -49,6 +49,7 @@
 			</div>
 			<!-- ENDIF showTags -->
 		</div>
+-->
 
 		<div class="btn-toolbar formatting-bar">
 			<div class="btn-group">

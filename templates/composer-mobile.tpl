@@ -70,6 +70,7 @@
 			</div>
 		</div>
 
+<!--
 		<div class="row category-tag-row">
 			<!-- IF isTopic -->
 			<div class="col-lg-3 category-list-container hidden-xs hidden-sm">
@@ -83,6 +84,7 @@
 			</div>
 			<!-- ENDIF showTags -->
 		</div>
+-->
 
 		<div class="row write-preview-container">
 			<div class="col-md-6 col-sm-12 write-container">
