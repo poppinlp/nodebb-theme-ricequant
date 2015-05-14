@@ -9,7 +9,10 @@
 						<img class="{brand:logo:display} forum-logo" src="{brand:logo}" />
 					</a>
 					<!-- IF showSiteTitle -->
+<!--
 					<a href="{relative_path}/">
+-->
+					<a href="/">
 						<h1 class="navbar-brand forum-title">{title}</h1>
 					</a>
 					<!-- ENDIF showSiteTitle -->
@@ -23,6 +26,16 @@
 			<div class="navbar-collapse collapse navbar-ex1-collapse">
 				<!-- IF !maintenanceHeader -->
 				<ul id="main-nav" class="nav navbar-nav pull-left">
+					<li>
+						<a href="/algorithms" title="[[global:header.algorithms]]">
+							<i id="algorithms" class="fa fa-fw fa-edit" data-content="0" ></i><span class="visible-xs-inline">[[global:header.algorithms]]</span>
+						</a>
+					</li>
+					<li>
+						<a href="/community" title="[[global:header.community]]">
+							<i id="community" class="fa fa-fw fa-users" data-content="0" ></i><span class="visible-xs-inline">[[global:header.community]]</span>
+						</a>
+					</li>
 <!--
 					<!-- IF loggedIn -->
 					<li>
