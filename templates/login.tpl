@@ -24,6 +24,13 @@
 					</div>
 				</div>
 				<div class="form-group">
+					<label for="captcha" class="col-lg-2 control-label" style="font-weight:normal;">[[login:captcha]]</label>
+					<div class="col-lg-10">
+						<input class="form-control" type="text" placeholder="[[login:captcha]]" name="captcha" id="captcha" style="display:inline-block;width:200px;" />
+                        <img class="js-captcha-img" data-src="/api/captcha" src="/api/captcha" height="40" width="108" alt="[[login:captcha]]">
+					</div>
+				</div>
+				<div class="form-group">
 					<div class="col-lg-offset-2 col-lg-10">
 						<div class="checkbox">
 							<label>

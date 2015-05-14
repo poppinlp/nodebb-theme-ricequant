@@ -1,5 +1,6 @@
 
 <div class="account-username-box" data-userslug="{userslug}" data-uid="{uid}">
+<!--
 	<ul class="nav nav-pills account-sub-links">
 		<li>
 			<div class="btn-group">
@@ -30,4 +31,5 @@
 		<li><a href="{config.relative_path}/user/{userslug}/edit"><i class="fa fa-pencil-square-o"></i> [[user:edit]]</a></li>
 		<!-- ENDIF showHidden -->
 	</ul>
+-->
 </div>
