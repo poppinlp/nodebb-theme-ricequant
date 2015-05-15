@@ -67,7 +67,10 @@
 					</span>
 				<!--<![endif]-->
 
+				<span class="btn btn-link" tabindex="-1"><i class="fa fa-code"></i></span>
+<!--
 				<span class="btn btn-link help hidden" tab-index="-1"><i class="fa fa-question"></i></span>
+-->
 
 				<form id="fileForm" method="post" enctype="multipart/form-data">
 					<!--[if gte IE 9]><!-->
