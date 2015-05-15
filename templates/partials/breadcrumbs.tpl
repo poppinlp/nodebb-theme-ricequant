@@ -1,7 +1,11 @@
 <ol class="breadcrumb">
 	<!-- BEGIN breadcrumbs -->
-	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb" <!-- IF @last -->class="active"<!-- ENDIF @last -->>
-		<!-- IF !@last --><a href="{breadcrumbs.url}" itemprop="url"><!-- ENDIF !@last -->
+	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb" <!-- IF @last -->class="active"<!-- ENDIF @last -->
+        <!-- IF @first -->
+            <a href="/" itemprop="url">
+        <!-- ELSE -->
+            <!-- IF !@last --><a href="{breadcrumbs.url}" itemprop="url"><!-- ENDIF !@last -->
+        <!-- ENDIF @first -->
 			<span itemprop="title">
 				{breadcrumbs.text}
 				<!-- IF @last -->

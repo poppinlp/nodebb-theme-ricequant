@@ -12,7 +12,7 @@
 <!--
 					<a href="{relative_path}/">
 -->
-					<a href="/" target="_blank">
+					<a href="//www.ricequant.com">
 						<h1 class="navbar-brand forum-title">{title}</h1>
 					</a>
 					<!-- ENDIF showSiteTitle -->
@@ -32,7 +32,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="/community" title="[[global:header.community]]">
+						<a href="/" title="[[global:header.community]]">
 							<i id="community" class="fa fa-fw fa-users" data-content="0" ></i><span class="visible-xs-inline">[[global:header.community]]</span>
 						</a>
 					</li>
@@ -180,7 +180,7 @@
 <!--
                         <a href="{relative_path}/register">
 -->
-                        <a href="/register">
+                        <a href="//www.ricequant.com/register">
 							<i class="fa fa-pencil visible-xs-inline"></i>
 							<span>[[global:register]]</span>
 						</a>
