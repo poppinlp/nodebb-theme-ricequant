@@ -1,8 +1,8 @@
 <ol class="breadcrumb">
 	<!-- BEGIN breadcrumbs -->
-	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb" <!-- IF @last -->class="active"<!-- ENDIF @last -->
+    <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb" <!-- IF @last -->class="active"<!-- ENDIF @last -->>
         <!-- IF @first -->
-            <a href="/" itemprop="url">
+            <a href="/community" target="_self" itemprop="url">
         <!-- ELSE -->
             <!-- IF !@last --><a href="{breadcrumbs.url}" itemprop="url"><!-- ENDIF !@last -->
         <!-- ENDIF @first -->
