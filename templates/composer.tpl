@@ -53,10 +53,10 @@
 
 		<div class="btn-toolbar formatting-bar">
 			<div class="btn-group">
-				<span class="btn btn-link" tabindex="-1"><i class="fa fa-bold"></i></span>
-				<span class="btn btn-link" tabindex="-1"><i class="fa fa-italic"></i></span>
-				<span class="btn btn-link" tabindex="-1"><i class="fa fa-list"></i></span>
-				<span class="btn btn-link" tabindex="-1"><i class="fa fa-link"></i></span>
+				<span class="btn btn-link" tabindex="-1" title="加粗"><i class="fa fa-bold"></i></span>
+				<span class="btn btn-link" tabindex="-1" title="倾斜"><i class="fa fa-italic"></i></span>
+				<span class="btn btn-link" tabindex="-1" title="插入列表"><i class="fa fa-list"></i></span>
+				<span class="btn btn-link" tabindex="-1" title="插入链接"><i class="fa fa-link"></i></span>
 
 				<!--[if gte IE 9]><!-->
 					<span class="btn btn-link img-upload-btn hide" tabindex="-1">
@@ -67,7 +67,7 @@
 					</span>
 				<!--<![endif]-->
 
-				<span class="btn btn-link" tabindex="-1"><i class="fa fa-code"></i></span>
+				<span class="btn btn-link" tabindex="-1" title="插入代码"><i class="fa fa-code"></i></span>
 <!--
 				<span class="btn btn-link help hidden" tab-index="-1"><i class="fa fa-question"></i></span>
 -->
