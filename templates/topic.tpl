@@ -166,14 +166,6 @@
 				</div>
 				<div style="clear:both;"></div>
 			</li>
-
-<!--
-			<!-- IF !posts.index -->
-			<li class="well post-bar" data-index="{posts.index}">
-				<!-- IMPORT partials/post_bar.tpl -->
-			</li>
-			<!-- ENDIF !posts.index -->
--->
 		<!-- END posts -->
 	</ul>
 
