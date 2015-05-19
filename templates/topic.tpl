@@ -169,7 +169,7 @@
 		<!-- END posts -->
 	</ul>
 
-	<div class="well col-md-11 col-xs-12 pull-right post-bar bottom-post-bar hide">
+	<div class="well col-md-11 col-xs-12 pull-right post-bar bottom-post-bar">
 		<!-- IMPORT partials/post_bar.tpl -->
 	</div>
 
