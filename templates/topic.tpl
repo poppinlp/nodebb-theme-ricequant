@@ -100,12 +100,14 @@
 						</div>
 						<!-- ENDIF !reputation:disabled -->
 
+<!--
 						<!-- IF privileges.topics:reply -->
 						<div class="btn-group">
 							<button class="btn btn-sm btn-default quote" type="button" title="[[topic:quote]]"><i class="fa fa-quote-left"></i></button>
 							<button class="btn btn-sm btn-primary btn post_reply" type="button">[[topic:reply]] <i class="fa fa-reply"></i></button>
 						</div>
 						<!-- ENDIF privileges.topics:reply -->
+-->
 
 						<div class="pull-right">
 <!--
@@ -165,11 +167,13 @@
 				<div style="clear:both;"></div>
 			</li>
 
+<!--
 			<!-- IF !posts.index -->
 			<li class="well post-bar" data-index="{posts.index}">
 				<!-- IMPORT partials/post_bar.tpl -->
 			</li>
 			<!-- ENDIF !posts.index -->
+-->
 		<!-- END posts -->
 	</ul>
 
