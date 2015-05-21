@@ -122,6 +122,7 @@
 			</div>
 			<!-- ENDIF groups.length -->
 
+<!--
 			<!-- IF ips.length -->
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -134,6 +135,7 @@
 				</div>
 			</div>
 			<!-- ENDIF ips.length -->
+-->
 
 		</div>
 
