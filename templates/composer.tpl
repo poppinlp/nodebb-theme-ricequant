@@ -68,6 +68,7 @@
 				<!--<![endif]-->
 
 				<span class="btn btn-link" tabindex="-1" title="插入代码"><i class="fa fa-code"></i></span>
+				<span class="btn btn-link" tabindex="-1" title="插入图片"><i class="fa fa-image"></i></span>
 <!--
 				<span class="btn btn-link help hidden" tab-index="-1"><i class="fa fa-question"></i></span>
 -->
