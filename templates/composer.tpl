@@ -57,25 +57,25 @@
 				<span class="btn btn-link" tabindex="-1" title="倾斜"><i class="fa fa-italic"></i></span>
 				<span class="btn btn-link" tabindex="-1" title="插入列表"><i class="fa fa-list"></i></span>
 				<span class="btn btn-link" tabindex="-1" title="插入链接"><i class="fa fa-link"></i></span>
+				<span class="btn btn-link" tabindex="-1" title="插入代码"><i class="fa fa-code"></i></span>
+				<span class="btn btn-link" tabindex="-1" title="插入图片"><i class="fa fa-image"></i></span>
 
 				<!--[if gte IE 9]><!-->
 					<span class="btn btn-link img-upload-btn hide" tabindex="-1">
 						<i class="fa fa-picture-o"></i>
 					</span>
-					<span class="btn btn-link file-upload-btn hide" tabindex="-1">
+					<span class="btn btn-link file-upload-btn hide" title="上传图片" tabindex="-1">
 						<i class="fa fa-upload"></i>
 					</span>
 				<!--<![endif]-->
 
-				<span class="btn btn-link" tabindex="-1" title="插入代码"><i class="fa fa-code"></i></span>
-				<span class="btn btn-link" tabindex="-1" title="插入图片"><i class="fa fa-image"></i></span>
 <!--
 				<span class="btn btn-link help hidden" tab-index="-1"><i class="fa fa-question"></i></span>
 -->
 
 				<form id="fileForm" method="post" enctype="multipart/form-data">
 					<!--[if gte IE 9]><!-->
-						<input type="file" id="files" name="files[]" multiple class="gte-ie9 hide"/>
+						<input type="file" id="files" name="files[]" accept="image/gif, image/jpeg, image/png" class="gte-ie9 hide"/>
 					<!--<![endif]-->
 					<!--[if lt IE 9]>
 						<input type="file" id="files" name="files[]" class="lt-ie9 hide" value="Upload"/>
