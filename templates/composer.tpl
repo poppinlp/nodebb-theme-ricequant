@@ -58,14 +58,13 @@
 				<span class="btn btn-link" tabindex="-1" title="插入列表"><i class="fa fa-list"></i></span>
 				<span class="btn btn-link" tabindex="-1" title="插入链接"><i class="fa fa-link"></i></span>
 				<span class="btn btn-link" tabindex="-1" title="插入代码"><i class="fa fa-code"></i></span>
-				<span class="btn btn-link" tabindex="-1" title="插入图片"><i class="fa fa-image"></i></span>
 
 				<!--[if gte IE 9]><!-->
 					<span class="btn btn-link img-upload-btn hide" tabindex="-1">
 						<i class="fa fa-picture-o"></i>
 					</span>
 					<span class="btn btn-link file-upload-btn hide" title="上传图片" tabindex="-1">
-						<i class="fa fa-upload"></i>
+						<i class="fa fa-image"></i>
 					</span>
 				<!--<![endif]-->
 

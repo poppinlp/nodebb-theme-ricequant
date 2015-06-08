@@ -45,14 +45,14 @@
 				<span class="btn btn-link"><i class="fa fa-italic"></i></span>
 				<span class="btn btn-link"><i class="fa fa-list"></i></span>
 				<span class="btn btn-link"><i class="fa fa-link"></i></span>
-				<span class="btn btn-link"><i class="fa fa-tags"></i></span>
+				<span class="btn btn-link"><i class="fa fa-code"></i></span>
 
 				<!--[if gte IE 9]><!-->
 					<span class="btn btn-link img-upload-btn hide">
 						<i class="fa fa-picture-o"></i>
 					</span>
 					<span class="btn btn-link file-upload-btn hide">
-						<i class="fa fa-upload"></i>
+						<i class="fa fa-image"></i>
 					</span>
 				<!--<![endif]-->
 
@@ -60,7 +60,7 @@
 
 				<form id="fileForm" method="post" enctype="multipart/form-data">
 					<!--[if gte IE 9]><!-->
-						<input type="file" id="files" name="files[]" multiple class="gte-ie9 hide"/>
+						<input type="file" id="files" name="files[]" accept="image/gif, image/jpeg, image/png" class="gte-ie9 hide"/>
 					<!--<![endif]-->
 					<!--[if lt IE 9]>
 						<input type="file" id="files" name="files[]" class="lt-ie9 hide" value="Upload"/>
