@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-ricequant",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "NodeBB theme for ricequant.",
   "main": "theme.less",
   "scripts": {
