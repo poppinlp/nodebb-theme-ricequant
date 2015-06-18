@@ -28,7 +28,7 @@
 				<ul id="main-nav" class="nav navbar-nav pull-left">
 					<li>
 						<a href="/algorithms" title="[[global:header.algorithms]]">
-							<i id="algorithms" class="fa fa-fw fa-edit" data-content="0" ></i><span class="visible-xs-inline">[[global:header.algorithms]]</span>
+							<i id="algorithms" class="fa fa-fw fa-line-chart" data-content="0" ></i><span class="visible-xs-inline">[[global:header.algorithms]]</span>
 						</a>
 					</li>
 					<li>
