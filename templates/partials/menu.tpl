@@ -31,12 +31,12 @@
 							<i id="algorithms" class="fa fa-fw fa-line-chart" data-content="0" ></i><span class="visible-xs-inline">[[global:header.algorithms]]</span>
 						</a>
 					</li>
+<!--
 					<li>
 						<a href="/community" target="_self" title="[[global:header.community]]">
 							<i id="community" class="fa fa-fw fa-users" data-content="0" ></i><span class="visible-xs-inline">[[global:header.community]]</span>
 						</a>
 					</li>
-<!--
 					<!-- IF loggedIn -->
 					<li>
 						<a href="{relative_path}/unread" title="[[global:header.unread]]">
