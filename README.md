@@ -1,3 +1,3 @@
 # nodebb-theme-ricequant
 
-Ricequant theme for NodeBB based on Bootstrap. Perfect for starting your own NodeBB themes!
+Now move to [RicequantInc](https://github.com/RicequantInc/nodebb-theme-ricequant)
